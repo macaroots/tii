@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <form action="cadastro" method="post">
+        <label>
+            <span>Nome Completo</span>
+            <input type="text" name="nome" size="4" maxlength="2" />
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email" value="a@exemplo.com" />
+        </label>
+        <label>
+            <span>Telefone</span>
+            <input type="text" name="telefone" />
+        </label>
+        <label>
+            <span>Cor favorita</span>
+            <input type="color" name="cor" />
+        </label>
+        <label>
+            <span>Nascimento</span>
+            <input type="date" name="nascimento" />
+        </label>
+        <label>
+            <span>Biografia</span>
+            <textarea name="biografia" cols="50" rows="10" maxlength="2">Escreva aqui.</textarea>
+        </label>
+        <label>
+            <span>Navegador</span>          
+            <input name="navegador" list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </label>
+        <p>
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="name">
+        </p>
+        <p>
+          <label for="last_name">Last name:</label>
+          <input type="text" id="last_name" name="last_name">
+        </p>
+        
+        <fieldset>
+            <legend>Tipo de pessoa</legend>
+            <label>
+                <input type="radio" name="tipo" value="fisica" />
+                <span>Pessoa física</span>
+            </label>
+            <div>
+                <input type="radio" name="tipo" id="tipo_2" value="juridica" />
+                <label for="tipo_2">Pessoa jurídica</label>
+            </div>
+        </fieldset>
+
+        <label>
+            <span>Tipo de Pessoa:</span>
+            <select name="tipo-pessoa" multiple>
+                <option value="fisica">Pessoa Física</option>
+                <optgroup label="Ju
+                ">
+                    <option value="juridica">Pessoa Jurídica</option>
+                </optgroup>
+            </select>
+        </label>
+
+        <button>Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
